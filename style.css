@@ -1,0 +1,19 @@
+body {
+    background-color: silver;
+}
+
+.photo {
+    border-radius: 100%;
+}
+
+.title {
+    font-family: cursive;
+    color:maroon
+}
+
+#hero-title {
+    color: black;
+    letter-spacing: -1px;
+    font-size: 40px;
+    font-weight: 500;
+}
