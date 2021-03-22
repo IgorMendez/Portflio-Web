@@ -1,0 +1,57 @@
+body {
+    background-color: silver;
+}
+
+.title {
+    font-family: cursive;
+    text-align: center;
+    color:maroon
+}
+
+.about-wrapper li {
+
+    padding: 10px 10px 10px;
+    display: inline-block;
+}
+
+.about-list {
+    text-align: center;
+}
+
+#hero-title {
+    color: black;
+    letter-spacing: -1px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#selfie-photo {
+    border-radius: 100%;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+#description {
+    margin: auto;
+    font-size: 120%;
+    text-align: center;
+}
+
+.main-section {
+    
+}
+
+.desc-block {
+    padding: 20px 20px 20px;
+}
+
+.selfie-block {
+    justify-content: center;
+    max-width: auto;
+}
+
+
+
+
+
+
