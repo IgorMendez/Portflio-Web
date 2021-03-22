@@ -2,13 +2,20 @@ body {
     background-color: silver;
 }
 
-.photo {
-    border-radius: 100%;
-}
-
 .title {
     font-family: cursive;
+    text-align: center;
     color:maroon
+}
+
+.about-wrapper li {
+
+    padding: 10px 10px 10px;
+    display: inline-block;
+}
+
+.about-list {
+    text-align: center;
 }
 
 #hero-title {
@@ -17,3 +24,34 @@ body {
     font-size: 40px;
     font-weight: 500;
 }
+
+#selfie-photo {
+    border-radius: 100%;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+#description {
+    margin: auto;
+    font-size: 120%;
+    text-align: center;
+}
+
+.main-section {
+    
+}
+
+.desc-block {
+    padding: 20px 20px 20px;
+}
+
+.selfie-block {
+    justify-content: center;
+    max-width: auto;
+}
+
+
+
+
+
+
