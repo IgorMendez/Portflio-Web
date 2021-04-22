@@ -3,18 +3,20 @@ const body = document.querySelector('body')
 const main = document.querySelector('main')
 const menu = document.getElementById('menu')
 const mainContainer = document.getElementById('main-container')
+const divContainer = document.getElementById('div-container')
 const getButton = document.getElementsByClassName('button')
 const buttonArray = [
-  'Sobre mim', 
+  'Sobremim', 
   'Habilidades', 
   'Formação', 
   'Experiências',
   'Contatos',
-  'Informações Gerais'
+  'InformaçõesGerais'
 ]
+const divArray = ['about-me', 'skills', 'education', 'experience', 'contact', 'info']
 
-// console.log()
-// mainContainer.children.namedItem('header-section')
+console.log()
+
 
 function buttomMenuCreate(e) {
   for(let index = 0; index < e.length; index += 1) {
@@ -22,24 +24,29 @@ function buttomMenuCreate(e) {
     menu.appendChild(createbutton)
     createbutton.innerText = buttonArray[index]
     createbutton.classList.add('button', 'btn-dark')
+    createbutton.setAttribute('href', '#'+divArray[index]);
     createbutton.id = buttonArray[index]
-  }
+  } 
+}
+let para = document.getElementById('para')
+
+function showContainer(event) {
+  if(event.type === 'click') {
+    console.log(event.href)
+    for(let index = 0; index < buttonArray.length; index += 1) {
+    }
+  } 
 }
 
-function showContainer() {
-  let oi = Array.from(mainContainer.children)
+function teste() {
   for(let index = 0; index < buttonArray.length; index += 1) {
-    oi[index].classList.add('container-hidden')
+    document.getElementById(buttonArray[index]).addEventListener('click', showContainer)
   }
 }
 
-function clickButton(target.event) {
-  if(target.event === 'click') {
-    clickButton()
-  }
-}
+
 
 window.onload = function() {
   buttomMenuCreate(buttonArray)
-  showContainer()
+  teste()
 }
